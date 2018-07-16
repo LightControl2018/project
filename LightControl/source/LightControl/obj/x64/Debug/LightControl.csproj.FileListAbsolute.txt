@@ -1,0 +1,17 @@
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.bindings.dll
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.dll
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.xml
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.Form1.resources
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.Properties.Resources.resources
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.GenerateResource.cache
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CoreCompileInputs.cache
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CopyComplete
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.exe
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.pdb
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe.config
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe
+E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\LightControl.pdb
+E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.csprojAssemblyReference.cache
