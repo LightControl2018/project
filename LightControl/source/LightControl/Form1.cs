@@ -16,6 +16,7 @@ namespace LightControl
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -24,14 +25,21 @@ namespace LightControl
             pictureBox2.Load("airconditionoff.png");
             pictureBox3.Load("lightoff.png");
             pictureBox4.Load("airconditionoff.png");
+
         }
 
         // 语音识别器
         SpeechRecognizer recognizer;
         bool isRecording = false;
-
+        Dictionary<string, string> entities = new Dictionary<string, string>();
+        Dictionary<string, int> ifexist = new Dictionary<string, int>();
+        bool flag = false;//判断是否需要二次识别
         private void Form1_Load(object sender, EventArgs e)
         {
+            entities.Add("location", "null");
+            entities.Add("device", "null");
+            ifexist.Add("location",0);
+            ifexist.Add("device",0);
             try
             {
                 // 第一步
@@ -39,7 +47,7 @@ namespace LightControl
                 // 密钥和区域可在 https://azure.microsoft.com/zh-cn/try/cognitive-services/my-apis/?api=speech-services 中找到
                 // 密钥示例: 5ee7ba6869f44321a40751967accf7a9
                 // 区域示例: westus
-                SpeechFactory speechFactory = SpeechFactory.FromSubscription("688e38c1cb694c599c73815224dc6fbc", "westus");
+                SpeechFactory speechFactory = SpeechFactory.FromSubscription("aee80335bb2049d593c906f5aa208b50", "westus");
 
                 // 识别中文
                 recognizer = speechFactory.CreateSpeechRecognizer("zh-CN");
@@ -124,26 +132,53 @@ namespace LightControl
         {
             // 第二步
             // 调用语言理解服务取得用户意图
-            string intent = await GetLuisResult(text);
-
+           
+                string intent = await GetLuisResult(text);
+            if (flag)
+            {
+                intent = await GetLuisResult(intent);
+                flag = false;
+            }
             // 第三步
             // 按照意图控制灯
-            
+
             if (!string.IsNullOrEmpty(intent))
             {
-                if (intent.Equals("TurnOn", StringComparison.OrdinalIgnoreCase))
+                if (intent.Equals("turn kitchen light on", StringComparison.OrdinalIgnoreCase))
                 {
-                    OpenWcLight();
+
                     OpenKitchenLight();
-                    OpenWcAircondition();
+
+                }
+                else if (intent.Equals("turn the kitchen light off", StringComparison.OrdinalIgnoreCase))
+                {
+
+                    CloseKitchenLight();
+
+                }
+                else if (intent.Equals("turn kitchen air conditioner on", StringComparison.OrdinalIgnoreCase))
+                {
                     OpenKitchenAircondition();
                 }
-                else if (intent.Equals("TurnOff", StringComparison.OrdinalIgnoreCase))
+                else if (intent.Equals("turn air conditioner in kitchen off", StringComparison.OrdinalIgnoreCase))
+                {
+                    CloseKitchenAircondition();
+                }
+                else if (intent.Equals("turn toilet light on", StringComparison.OrdinalIgnoreCase))
+                {
+                    OpenWcLight();
+                }
+                else if (intent.Equals("turn toilet light off", StringComparison.OrdinalIgnoreCase))
                 {
                     CloseWcLight();
-                    CloseKitchenLight();
+                }
+                else if (intent.Equals("turn toilet air conditioner on", StringComparison.OrdinalIgnoreCase))
+                {
+                    OpenWcAircondition();
+                }
+                else if (intent.Equals("turn toilet air conditioner off", StringComparison.OrdinalIgnoreCase))
+                {
                     CloseWcAircondition();
-                    CloseKitchenAircondition();
                 }
             }
             
@@ -158,17 +193,54 @@ namespace LightControl
             {
                 // LUIS 终结点地址, 示例: https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/102f6255-0c32-4f36-9c79-fe12fea4d6c4?subscription-key=9004421650254a74876cf3c888b1d11f&verbose=true&timezoneOffset=0&q=
                 // 可在 https://www.luis.ai 中进入app右上角publish中找到
-                string luisEndpoint = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/f785690c-4fb0-469b-8e14-baa9fb4ae08d?subscription-key=232fab248ce14460a2a0c7c6edf9f952&verbose=true&timezoneOffset=0&q=";
+                string luisEndpoint = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/08374698-5ce8-4316-8058-bae2593ac761?subscription-key=7da65785f261488e9f8820e8db4adbff&verbose=true&timezoneOffset=0&q= ";
                 string luisJson = await httpClient.GetStringAsync(luisEndpoint + text);
 
                 try
                 {
                     dynamic result = JsonConvert.DeserializeObject<dynamic>(luisJson);
                     string intent = (string)result.topScoringIntent.intent;
-                    double score = (double)result.topScoringIntent.score;
-                    Log("意图: " + intent + "\r\n得分: " + score + "\r\n");
+                    double score = 0;
+                    int size = result.entities.Count;
+                    if (size == 0)
+                    {
+                        Log("illegal!\r\n");
+                        return "illegal!";
+                    }
+                    else if (size == 2)
+                    {
+                        score = (double)result.topScoringIntent.score;
+                        Log("意图: " + intent + "\r\n得分: " + score + "\r\n");
+                        entities["location"]=result.entities[1].entity;
+                        entities["device"]= result.entities[0].entity;
+                        ifexist["location"]=1;
+                        ifexist["device"] = 1;
+                        return intent;
+                    }
+                    else
+                    {
+                        flag = true;
+                        if (result.entities[0].type == "location")
+                        {
+                            entities["location"] = result.entities[0].entity;
 
-                    return intent;
+                            text =text + entities["device"];
+                            return text;
+                        }
+                        else
+                        {
+                            entities["device"] = result.entities[0].entity;
+                            text =text + entities["location"];
+                            return text;
+                        }
+                    }
+                    //string ent = (string)result.entities[1].entity;
+                    //string typ = (string)result.entities[1].type;
+                    //bool flag = true;
+                    //if (result.entities[0] == null) flag = false;
+                    
+                    
+                   
                 }
                 catch (Exception ex)
                 {
@@ -268,9 +340,11 @@ namespace LightControl
                 e.Handled = true;
                 Log(textBox.Text);
                 ProcessSttResult(textBox.Text);
+
                 textBox.Text = string.Empty;
             }
         }
+        /*
         private Boolean wcmatch(string text)
         {
             string st = "厕所";
@@ -283,6 +357,6 @@ namespace LightControl
             string input = @"^[\u4e00-\u9fa5]+$";
             return Regex.IsMatch(st, input);
         }
-
+        */
     }
 }

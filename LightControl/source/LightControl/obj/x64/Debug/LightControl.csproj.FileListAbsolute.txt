@@ -15,3 +15,37 @@ E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe.
 E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe
 E:\暑期学校\LightControl\source\LightControl\bin\x64\Debug\LightControl.pdb
 E:\暑期学校\LightControl\source\LightControl\obj\x64\Debug\LightControl.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.bindings.dll
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe.config
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\LightControl.pdb
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.Form1.resources
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.Properties.Resources.resources
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CopyComplete
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.exe
+C:\Users\Administrator\Desktop\LightControl\新建文件夹 (2)\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.pdb
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.bindings.dll
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe.config
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\LightControl.pdb
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+D:\Desktop\project-master\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csprojAssemblyReference.cache
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.Form1.resources
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.Properties.Resources.resources
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.GenerateResource.cache
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CoreCompileInputs.cache
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CopyComplete
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.exe
+D:\Desktop\project-master\LightControl\source\LightControl\obj\x64\Debug\LightControl.pdb
