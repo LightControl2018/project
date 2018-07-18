@@ -38,8 +38,7 @@ namespace LightControl
         {
             entities.Add("location", "null");
             entities.Add("device", "null");
-            ifexist.Add("location",0);
-            ifexist.Add("device",0);
+            
             try
             {
                 // 第一步
@@ -213,8 +212,7 @@ namespace LightControl
                         Log("意图: " + intent + "\r\n得分: " + score + "\r\n");
                         entities["location"]=result.entities[1].entity;
                         entities["device"]= result.entities[0].entity;
-                        ifexist["location"]=1;
-                        ifexist["device"] = 1;
+                        
                         return intent;
                     }
                     else
@@ -234,10 +232,7 @@ namespace LightControl
                             return text;
                         }
                     }
-                    //string ent = (string)result.entities[1].entity;
-                    //string typ = (string)result.entities[1].type;
-                    //bool flag = true;
-                    //if (result.entities[0] == null) flag = false;
+                   
                     
                     
                    
@@ -344,19 +339,6 @@ namespace LightControl
                 textBox.Text = string.Empty;
             }
         }
-        /*
-        private Boolean wcmatch(string text)
-        {
-            string st = "厕所";
-            string input = @"^[\u4e00-\u9fa5]+$";
-            return Regex.IsMatch(st, input);
-        }
-        private Boolean kitchenmatch(string text)
-        {
-            string st = "厨房";
-            string input = @"^[\u4e00-\u9fa5]+$";
-            return Regex.IsMatch(st, input);
-        }
-        */
+        
     }
 }
