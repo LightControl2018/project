@@ -66,3 +66,20 @@ E:\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.Co
 E:\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CopyComplete
 E:\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.exe
 E:\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.pdb
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.bindings.dll
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe.config
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\LightControl.exe
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\LightControl.pdb
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.dll
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\bin\x64\Debug\Newtonsoft.Json.xml
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.csprojAssemblyReference.cache
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.Form1.resources
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.Properties.Resources.resources
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.GenerateResource.cache
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CoreCompileInputs.cache
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.csproj.CopyComplete
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.exe
+F:\Summer School\Git仓库\project\LightControl\source\LightControl\obj\x64\Debug\LightControl.pdb
